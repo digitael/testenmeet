@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Steep Ramp Test</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+   <main>
+    <div class="container mt-5 pt-5">
+<!-- NAVBAR ------------------------------------>
+<!---------------------------------------------->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+    <img src="img/testenmeetlogo01.png" width="208" height="40" alt="">
+  </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kies-een-test.html">Kies een test</a>
+          </li>
+        </ul>       
+      </div>
+    </nav>
+    
+<!--/NAVBAR ------------------------------------>
+<!---------------------------------------------->
+   <div id="section-to-print">
+    <h1>Steep Ramp Test Calculator</h1>
+    
+   
+    <div class="row">
+       <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="">Naam</label>
+          <input type="text" id="name" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-4">
+        <div class="form-group">
+          <label for="">Leeftijd</label>
+          <input type="number" id="inputLeeftijd" class="form-control gewichtKG" aria-describedby="GewichtInKG" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-4">
+         <div class="form-group">
+          <label for="">Gewicht</label>
+          <input type="number" id="inputGewicht" class="form-control aantalHH" aria-describedby="aantalHerhalingen" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label class="" for="inputGroupSelect01">Geslacht</label>
+
+              <select id="inputGeslacht" class="custom-select" id="inputGroupSelect01">
+                <option selected>Kies...</option>
+                <option value="1">Man</option>
+                <option value="2">Vrouw</option>
+              </select>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="">Lengte (cm)</label>
+          <input type="number" id="inputLengte" class="form-control 1RMEpley" aria-describedby="1RMEpley">
+        </div>
+      </div>      
+      <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam">Max Wattage tijdens test</label>
+          <input type="number" id="maxWatt" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>
+    </div><!--/row-->
+    
+    <div class="row">
+    
+    <button id="berekenen" class="btn btn-primary ml-3">Berekenen</button>
+    
+    </div>
+    
+    <div class="row mt-5">
+       
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="">Wmax Steepramp</label>
+          <input type="text" id="outputWmax" class="form-control gewichtKG" aria-describedby="GewichtInKG" placeholder="" readonly>
+        </div>
+      </div>
+      <div class="col-lg-6">
+         <div class="form-group">
+          <label for="">VO2max geschat</label>
+          <input type="text" id="vo2maxGeschat" class="form-control aantalHH" aria-describedby="aantalHerhalingen" placeholder="" readonly>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="">VO2max verwacht</label>
+          <input type="text" id="vo2maxVerwacht" class="form-control aantalHH" aria-describedby="aantalHerhalingen" placeholder="" readonly>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="">&#37; van verwacht</label>
+          <input type="text" id="percVerwacht" class="form-control 1RMEpley" aria-describedby="1RMEpley" readonly>
+        </div>
+      </div>      
+    </div><!--/row-->
+    </div><!--/section to print-->
+    
+      <button class="btn btn-secondary mt-3" id="printButton">Print resultaat</button>
+    
+    </div><!--/container--> 
+    
+    <div class="container pt-5 d-print-none">
+       <h2>Testprotocol Steep Ramp Test</h2>
+        <p><em>Dit protocol is (in aangepaste vorm) overgenomen uit de KNGF-standaard beweeginterventie bij diabetes type 2 (2009) en is toepasbaar voor de doelgroep van de BeweegKuur.</em></p>
+        
+        <p>Met behulp van deze test kan het uithoudingsvermogen van de deelnemer geschat worden. Het is een korte test die bij de meeste deelnemers slechts 2 tot 3 minuten duurt. De cardiovasculaire belasting is relatief laag. Er is geen algemene consensus over exclusiecriteria voor de test. De test wordt pas afgenomen na overleg met een specialist (sportarts/cardioloog) indien gebleken is, dat:</p>
+            <ul>
+                <li>De maximale hartslag &lt;120 sl/min is.</li>
+                <li>Er sprake is van een vertraagd hartfrequentieherstel (&lt;12 sl/min, 1 min na maximale inspanning) in combinatie met chronotrope incompetentie (Hfmax&lt; 85% Hfmax(verwacht) waarbij: Hfmax(verwacht) = 207-0.7 x leeftijd).</li>
+            </ul>
+       
+        
+        <p>De Steep Ramp Test stelt de fysiotherapeut in staat om gaandeweg het begeleidingstraject herhaald te testen en zo het uithoudingsvermogen te monitoren en indien nodig de training aan te passen. Een fysiotherapeut kan beslissen geen Steep Ramp test uit te voeren (bijvoorbeeld op basis van adviezen / resultaten van de huisarts, medisch specialisten etc). De test wordt uitgevoerd op een geijkte ergometer aan de hand van de volgende stappen:</p>
+        
+        <ol>
+            <li>Voorbereiden: laat de deelnemer plaatsnemen op de fiets.</li>
+            <li>Geef instructie: na de warming-up gaat de deelnemer fietsen met een snelheid tussen de 70-80 omwentelingen per minuut. Dit geeft een meter op de fiets aan.</li>
+            <li>Start met de warming-up: 3 minuten onbelast fietsen</li>
+            <li>Na 3 minuten: verhoog het wattage van 0 naar 25 Watt</li>
+            <li>Na 10 seconden: verhoog het wattage met 25 naar 50 Watt</li>
+            <li>Na 20 seconden: verhoog het wattage met 25 naar 75 Watt</li>
+            <li>Na 30 seconden: verhoog het wattage met 25 naar 100 Wat</li>
+            <li>Na 40 seconden: verhoog het wattage met 25 naar 125 Watt ;</li>
+            <li>en zo door….</li>
+            <li>Stop als het aantal omwentelingen van de deelnemer lager is dan 60 per minuut</li>
+            <li>Noteer het maximaal behaalde wattage tijdens de test (WSteepRamp) en bereken het wattage dat op basis van de steep ramp test gebruikt gaat worden bij het bepalen van de trainingsintensiteit (Wmax): </li>
+        </ol>
+
+    </div>
+   
+  
+    </main>
+
+   
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/steep-ramp-test.js"></script>
+    <script src="scripts/index.js"></script>
+
+  </body>
+</html>

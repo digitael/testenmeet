@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>1 RM krachttest</title> 
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/index.css">
+<!--  <link rel="stylesheet" href="styles/index.processed.css">-->
+</head>
+<body>
+ 
+
+  <div class="container mt-5 pt-5">
+<!-- NAVBAR ------------------------------------>
+<!---------------------------------------------->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+    <img src="img/testenmeetlogo01.png" width="208" height="40" alt="">
+  </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kies-een-test.html">Kies een test</a>
+          </li>
+        </ul>       
+      </div>
+    </nav>
+    
+<!--/NAVBAR ------------------------------------>
+<!---------------------------------------------->
+    <h1>Bereken 1 RM voor krachtoefeningen</h1>
+     <form>
+    <div id="completeRow1" class="">
+   
+    <div class="row">
+       <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam">Oefening naam</label>
+          <input type="text" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="">Gewicht (kg)</label>
+          <input type="number" class="form-control gewichtKG" aria-describedby="GewichtInKG" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+         <div class="form-group">
+          <label for="">Aantal herh.</label>
+          <input type="number" class="form-control aantalHH" aria-describedby="aantalHerhalingen" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="">1RM Brzycki</label>
+          <input type="text" class="form-control 1RMBrzycki" aria-describedby="1RMBrzycki" readonly>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="">1RM Epley</label>
+          <input type="text" class="form-control 1RMEpley" aria-describedby="1RMEpley" readonly>
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-4 hideIt">
+        
+          <label for="" class="d-block">&nbsp;</label>    
+        <button type="button" class="closeCross d-print-none" aria-label="Close"><img src="img/icon-cross-s.png" alt="closing icon" title="closing icon"></button>
+        </div>
+      
+    </div>
+    
+    </div><!-- /completeRow-->
+    
+    <div id="completeRow2">
+    </div>
+    <div class="col-lg-11 p-0">
+      <button type="button" id="plusButton" class="btn btn-secondary d-print-none"><strong>+</strong></button>
+      
+      <button id="berekenButton" class="btn btn-dark d-print-none">Berekenen</button>
+            
+      <button id="schemaButton" class="btn btn-dark d-print-none">Maak Schema</button>
+      
+      <input id="wisButton" class="btn btn-danger float-right" type="reset" value="Alles Wissen">
+      </div>
+      
+      <div class="col-lg-1">&nbsp;</div>
+    </form>  
+    
+    <div id="section-to-print">
+    <div id="completeRow4" class="pt-5 px-3">
+     
+     <div class="row text-white bg-secondary">
+        <div class="col-lg-3 col-md-4">
+           <span class="exerciseName">&nbsp;</span>
+        </div>
+        <div class="col">
+            50%
+        </div>
+        
+        <div class="col">
+            55%
+        </div>
+        
+        <div class="col">
+            60%
+        </div>
+        
+        <div class="col">
+            65%
+        </div>
+        
+        <div class="col">
+            70%
+        </div>
+        
+        <div class="col">
+            75%
+        </div>
+        
+        <div class="col">
+            80%
+        </div>
+        
+        <div class="col">
+            85%
+        </div>
+        
+        <div class="col">
+            90%
+        </div>
+        
+        <div class="col">
+            95%
+        </div>
+        
+        <div class="col">
+            100%
+        </div>
+        
+    </div>
+       
+       <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <strong>Brzycki</strong>  
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz50p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz55p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz60p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz65p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz70p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz75p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz80p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz85p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz90p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz95p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="brzP brz100p"></span>
+        </div>
+       </div>
+       
+       <div class="row bg-light">
+        <div class="col-lg-3 col-md-4">
+          <strong>Epley</strong>  
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl50p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl55p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl60p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl65p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl70p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl75p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl80p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl85p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl90p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl95p"></span>
+        </div>
+        
+        <div class="col">
+            <span class="eplP epl100p"></span>
+        </div>
+       </div>
+       <hr class="m-0">
+    </div>
+     
+     <div id="completeRow5" class="px-3">
+         
+     </div>
+      <button class="btn btn-secondary mt-3 d-print-none" id="printButton">Print schema</button>
+    </div>
+   
+    <div class="py-5 d-print-none">
+      <p>1RM can either be calculated directly using maximal testing or indirectly using submaximal estimation. The submaximal estimation method is preferred as it is safer, quicker, and less unnerving for inexperienced exercisers;[2] however, it may underestimate the actual 1RM.[3] One rep maximum calculators are used to predict a one rep maximum lift. The degree of accuracy can vary largely depending on the weight training experience and muscular composition of the athlete. Also, most one rep maximum calculators are designed for seasoned strength trainers, and those with little experience may find their actual one rep maximum is much lower because their nervous system cannot handle the stress of a high weight. This test should be performed with a spotter for reasons of safety.</p>
+
+      <p>Weight training protocols often use 1RM when programming to ensure the exerciser reaches resistance overload, especially when the exercise objective is muscular strength, endurance or hypertrophy. By understanding the maximal potential of the muscle, it is possible to reach resistance overload by increasing the number of repetitions for an exercise.</p>
+
+      <p>Determining the 1 rep max can be done directly through trial and error and simply requires the exerciser to complete one full repetition with the maximum weight. There are several common formulas used to estimate 1RM using the submaximal method, the Epley and the Brzycki being the most common.[4] In the formulas below, {\displaystyle r} r is the number of repetitions performed and {\displaystyle w} w is the amount of weight used (note that {\displaystyle w} w is a factor of each formula, so the unit of measurement doesn't matter).</p>
+  </div>
+    
+  </div>
+  
+ 
+  
+
+  
+  
+  <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/1rm.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

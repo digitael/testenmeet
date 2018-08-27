@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>1 RM krachttest</title> 
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/index.css">
+<!--  <link rel="stylesheet" href="styles/index.processed.css">-->
+</head> 
+<body>
+ 
+
+  <div class="container mt-5 pt-5">
+<!-- NAVBAR ------------------------------------>
+<!---------------------------------------------->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+    <img src="img/testenmeetlogo01.png" width="208" height="40" alt="">
+  </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kies-een-test.html">Kies een test</a>
+          </li>
+        </ul>       
+      </div>
+    </nav>
+    
+<!--/NAVBAR ------------------------------------>
+<!---------------------------------------------->
+    <h1>6 Minuten Wandeltest Calculator</h1>
+    
+   
+    <div class="row">
+       <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="">Naam testpersoon</label>
+          <input type="text" id="name" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="">Leeftijd</label>
+          <input type="number" id="inputLeeftijd" class="form-control gewichtKG" aria-describedby="GewichtInKG" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+         <div class="form-group">
+          <label for="">Gewicht(kg)</label>
+          <input type="number" id="inputGewicht" class="form-control aantalHH" aria-describedby="aantalHerhalingen" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label class="" for="inputGroupSelect01">Geslacht</label>
+
+              <select id="inputGeslacht" class="custom-select" id="inputGroupSelect01">
+                <option selected>Kies...</option>
+                <option value="1">Man</option>
+                <option value="0">Vrouw</option>
+              </select>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="">Lengte(cm)</label>
+          <input type="number" id="inputLengte" class="form-control 1RMEpley" aria-describedby="1RMEpley">
+        </div>
+      </div> 
+    </div><!--/row-->
+    
+    <div class="row">
+      <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam" class="d-block">Extra metingen</label>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="hartslagCheck">
+              <label class="custom-control-label" for="hartslagCheck">Hartslagmeting</label>
+            </div>
+            
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="zuurstofCheck">
+              <label class="custom-control-label" for="zuurstofCheck">Zuurstofsaturatie</label>
+            </div>
+        </div>
+      </div> 
+       <div class="col-lg-2 col-md-4 hartslagHide">
+        <div class="form-group">
+          <label for="">Hartslag aanvang</label>
+          <input type="number" id="hartslagAanvang" class="form-control " aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>      
+      <div class="col-lg-2 col-md-4 hartslagHide">
+        <div class="form-group">
+          <label for="">Hartslag na test</label>
+          <input type="number" id="hartslagEind" class="form-control" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4 spO2Hide">
+        <div class="form-group">
+          <label for="oefeningNaam">spO2 aanvang</label>
+          <input type="number" id="spO2Aanvang" class="form-control " aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>      
+      <div class="col-lg-2 col-md-4 spO2Hide">
+        <div class="form-group">
+          <label for="oefeningNaam">spO2 na test</label>
+          <input type="number" id="spO2Eind" class="form-control " aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>
+    </div><!--/row-->
+    
+    <div class="row">
+      <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam">&nbsp;</label>
+          <input type="number" id="" class="form-control d-none" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>      
+       <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam">Lengte parcours(m)</label>
+          <input type="number" id="afstandParcours" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>      
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam">Gelopen afstand(m)</label>
+          <input type="number" id="afstandGelopen" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam">BMI</label>
+          <input type="number" id="BMI" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="" readonly>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam" class="d-block">&nbsp;</label>
+          <input type="button" id="buttonBereken" class="btn btn-primary" value="Berekenen">
+        </div>
+      </div>
+    </div><!--/row-->
+    
+    
+    
+    <hr>
+    
+    <h2>Verwachte loopafstand</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam">Formule 1</label>
+          <input type="number" id="formule1Calculated" class="form-control" aria-describedby="Naam oefening" placeholder="" readonly>
+            <p><em><small>normwaarde voor gezonde volwassenen tussen de 80 en 85 jaar</small></em></p>
+        </div>
+      </div>      
+       <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="oefeningNaam">Formule 2</label>
+          <input type="number" id="formule2Calculated" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="" readonly>
+            <p><em><small>normwaarde voor gezonde volwassenen tussen de 40 en 90 jaar</small></em></p>
+        </div>
+        
+      </div>      
+      <div class="col-lg-3 col-md-4 hartslagHide">
+        <div class="form-group">
+          <label for="oefeningNaam">Formule 2 + Hartslagmeting</label>
+          <input type="number" id="formule2HRCalculated" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="" readonly>
+          <p><em><small>normwaarde voor gezonde volwassenen tussen de 40 en 90 jaar</small></em></p>
+        </div>
+      </div> 
+      <div class="col-lg-1 col-md-4 hartslagHide">
+        <div class="form-group">
+          <label for="">&Delta;HR</label>
+          <input type="number" id="HRVerschil" class="form-control" aria-describedby="" placeholder="" readonly>
+        </div>
+      </div> 
+      <div class="col-lg-1 col-md-4 spO2Hide">
+        <div class="form-group">
+          <label for="">&Delta;spO2</label>
+          <input type="number" id="spO2Verschil" class="form-control" aria-describedby="" placeholder="" readonly>
+        </div>
+      </div> 
+      
+    </div><!--/row-->
+  
+    </div>
+  
+
+  
+  
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="scripts/6mwt.js"></script>
+</body>
+</html>

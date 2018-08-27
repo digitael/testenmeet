@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BMI Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+   <main>
+    <div class="container mt-5 pt-5">
+<!-- NAVBAR ------------------------------------>
+<!---------------------------------------------->
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+    <img src="img/testenmeetlogo01.png" width="208" height="40" alt="">
+  </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kies-een-test.html">Kies een test</a>
+          </li>
+        </ul>       
+      </div>
+    </nav>
+    
+<!--/NAVBAR ------------------------------------>
+<!---------------------------------------------->
+   <div id="section-to-print">
+    <h1>BMI Calculator</h1>
+    
+   
+    <div class="row" id="firstRow">
+       <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="">Naam</label>
+          <input type="text" id="name" class="form-control oefeningNaam" aria-describedby="Naam oefening" placeholder="">
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-4">
+         <div class="form-group">
+          <label for="">Gewicht (kg)</label>
+          <input type="number" id="inputGewicht" class="form-control aantalHH" aria-describedby="aantalHerhalingen" placeholder="">
+        </div>
+      </div> 
+       <div class="col-lg-2 col-md-4">
+        <div class="form-group">
+          <label for="">Lengte (cm)</label>
+          <input type="number" id="inputLengte" class="form-control 1RMEpley" aria-describedby="1RMEpley">
+        </div>
+      </div>     
+     
+      <div class="col-lg-2 col-md-4">        
+          <label class="" for="">Geslacht</label>
+              <select id="inputGeslacht" class="custom-select" id="inputGroupSelect01">
+                <option selected>Kies...</option>
+                <option value="1">Man</option>
+                <option value="2">Vrouw</option>
+              </select>        
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="form-group">
+          <label for="">BMI</label>
+          <input type="number" id="BMICalculated" class="form-control gewichtKG" aria-describedby="GewichtInKG" placeholder="" readonly>
+        </div>
+      </div>
+      
+    </div><!--/row-->
+    <p class="">Gezond gewicht op basis van BMI: <span id="BMIMinMax"></span></p>
+      <p class=""><span id="hamwi"></span></p>
+    
+    
+    <div class="row mt-5">
+          
+    </div><!--/row-->
+    </div><!--/section to print-->
+    
+     
+    
+    </div><!--/container--> 
+    
+    <div class="container pt-5 d-print-none">
+       
+
+    </div>
+   
+  
+    </main>
+
+   
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts/bmi.js"></script>
+
+  </body>
+</html>
